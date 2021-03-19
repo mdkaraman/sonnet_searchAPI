@@ -1,5 +1,5 @@
 """
-WSGI config for sonnet_searcherAPI project.
+WSGI config for sonnet_searchAPI project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sonnet_searcherAPI.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sonnet_searchAPI.settings')
 
 application = get_wsgi_application()

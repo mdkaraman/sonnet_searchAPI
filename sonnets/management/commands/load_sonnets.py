@@ -11,7 +11,7 @@ class Command(BaseCommand):
             f.close()
 
         # Isolate lines containing sonnets
-        sonnet_lines = [line.strip() for line in lines[43:2662]]
+        sonnet_lines = [line.strip() for line in lines[43:2661]]
 
         # Group sonnets in list of lists
         sonnets = []
@@ -19,7 +19,7 @@ class Command(BaseCommand):
             sonnets += [sonnet_lines[i:i+17]]
 
         # Remove all empty strings
-        sonnets = [[line for line in sonnet if line] for sonnet in sonnets[:-1]]
+        sonnets = [[line for line in sonnet if line] for sonnet in sonnets]
 
         for sonnet in sonnets:
             sonnet = Sonnet(number=sonnet[0], text=sonnet[1:])

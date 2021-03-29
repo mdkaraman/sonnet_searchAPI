@@ -8,7 +8,7 @@ class SonnetSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Sonnet
-        fields = ['number', 'text']
+        fields = ['id', 'number', 'text']
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
 
